@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My clock from Codepen</title>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+
+</head>
+<style>
+    body{
+    background: rgba(56,95,12,1);
+    background: -moz-linear-gradient(left, rgba(56,95,12,1) 0%, rgba(56,95,12,1) 0%, rgba(73,107,7,1) 43%, rgba(86,115,3,1) 74%, rgba(96,122,0,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(56,95,12,1)), color-stop(0%, rgba(56,95,12,1)), color-stop(43%, rgba(73,107,7,1)), color-stop(74%, rgba(86,115,3,1)), color-stop(100%, rgba(96,122,0,1)));
+    background: -webkit-linear-gradient(left, rgba(56,95,12,1) 0%, rgba(56,95,12,1) 0%, rgba(73,107,7,1) 43%, rgba(86,115,3,1) 74%, rgba(96,122,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(56,95,12,1) 0%, rgba(56,95,12,1) 0%, rgba(73,107,7,1) 43%, rgba(86,115,3,1) 74%, rgba(96,122,0,1) 100%);
+    background: -ms-linear-gradient(left, rgba(56,95,12,1) 0%, rgba(56,95,12,1) 0%, rgba(73,107,7,1) 43%, rgba(86,115,3,1) 74%, rgba(96,122,0,1) 100%);
+    background: linear-gradient(to right, rgba(56,95,12,1) 0%, rgba(56,95,12,1) 0%, rgba(73,107,7,1) 43%, rgba(86,115,3,1) 74%, rgba(96,122,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#385f0c', endColorstr='#607a00', GradientType=1 );
+
+
+    }
+    #clock{
+    font-size:10em;
+    letter-spacing:.02em;
+    text-align:center;
+    font-family: 'Share Tech', sans-serif;
+    color:green;
+    }
+
+    #clock span {
+    font-size:.5em;
+    letter-spacing:-.050em;
+    }
+
+    #clock p{
+    background-color:black;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+    width:40%;
+    margin-left:30%;
+    margin-right:30%;
+    -moz-box-shadow: 0 0 0px #fff;
+    -webkit-box-shadow: 0 0 50px #fff;
+    box-shadow: 0px 0px 50px #fff;
+    }
+
+    }  
+
+    
+    </style>    
+    
+
+<body id="clock" onload="setInterval('updateTime()', 1000)"></body>
+
+
+    <script src="clock.js"></script>    
+</html>
